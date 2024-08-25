@@ -57,4 +57,30 @@ Possibly identified card (using /usr/share/pcsc/smartcard_list.txt):
 NXP JCOP 21 V2.2 36K
 JC V2.2
  ```
+# Get Card info
+```bash
+gp -info
+CPLC: ICFabricator=4790
+ICType=5016
+Card Data:
+Tag 6: 1.2.840.114283.1
+-> Global Platform card
+Tag 60: 1.2.840.114283.2.2.1.1
+-> GP Version: 2.1.1
+Tag 6: 1.2.840.114283.4.2.21
+-> GP SCP02 i=15
+Tag 66: 1.3.6.1.4.1.42.2.110.1.2
+-> JavaCard v2
+Card Capabilities:
+Version: 255 (0xFF) ID: 1 (0x01) type: DES3 length: 16 (factory key)
+Version: 255 (0xFF) ID: 2 (0x02) type: DES3 length: 16 (factory key)
+Version: 255 (0xFF) ID: 3 (0x03) type: DES3 length: 16 (factory key)
+# Warning: no keys given, defaulting to 404142434445464748494A4B4C4D4E4F
+CPLC: ICFabricator=4790
+ICType=5016
+4790 ：NXP
+5016： NXP JCOP 21
+JC Version 2.2
+ ```
+
 
