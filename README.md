@@ -82,5 +82,13 @@ ICType=5016
 5016： NXP JCOP 21
 JC Version 2.2
  ```
-
+# Get Applet info
+```bash
+gp --list
+### Warning: no keys given, defaulting to 404142434445464748494A4B4C4D4E4F
+ISD: A000000003000000 (OP_READY)
+Privs: SecurityDomain, CardLock, CardTerminate, CardReset, CVMManagement
+PKG: A0000000035350 (LOADED)
+Applet: A000000003535041
+ ```
 
