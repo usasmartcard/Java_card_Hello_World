@@ -1,7 +1,7 @@
 # Java_card_Hello_World
 
-Install software:
-//Ubuntu 18.04
+# Install software:
+# Ubuntu 18.04
 lsb_release -a
 No LSB modules are available.
 Distributor ID: Ubuntu
