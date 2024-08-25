@@ -91,4 +91,27 @@ Privs: SecurityDomain, CardLock, CardTerminate, CardReset, CVMManagement
 PKG: A0000000035350 (LOADED)
 Applet: A000000003535041
  ```
-
+# Install CAP file
+```bash
+gp --install gpshell-1.4.4/helloworld.cap
+gp --list
+# Warning: no keys given, defaulting to 404142434445464748494A4B4C4D4E4F
+ISD: A000000003000000 (OP_READY)
+Privs: SecurityDomain, CardLock, CardTerminate, CardReset, CVMManagement
+APP: D0D1D2D3D4D50101 (SELECTABLE)
+PKG: A0000000035350 (LOADED)
+Applet: A000000003535041
+PKG: D0D1D2D3D4D501 (LOADED)
+Applet: D0D1D2D3D4D50101
+ ```
+# Send APDU to get Hello World
+```bash
+opensc-tool -s "00 A4 04 00 07 D0 D1 D2 D3 D4 D5 01" -s "00:CB:3F:FF:05:5C:03:5F:C1:02:00"
+Using reader with a card: Gemalto PC Twin Reader 00 00
+Sending: 00 A4 04 00 07 D0 D1 D2 D3 D4 D5 01
+Received (SW1=0x90, SW2=0x00):
+48 65 6C 6C 6F 20 57 6F 72 6C 64 21 Hello World!
+Sending: 00 CB 3F FF 05 5C 03 5F C1 02 00
+Received (SW1=0x90, SW2=0x00):
+48 65 6C 6C 6F 20 57 6F 72 6C 64 21 Hello World!
+ ```
