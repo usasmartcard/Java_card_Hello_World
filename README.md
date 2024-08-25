@@ -34,7 +34,7 @@ git clone https://github.com/martinpaljak/GlobalPlatformPro
 cd GlobalPlatformPro
  ./mvnw package
  ```
-# setup gp
+# Setup gp
 ```bash
 alias gp="java -jar /home/sonnyyu/GlobalPlatformPro/tool/target/gp.jar"
 gp -h
