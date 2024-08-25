@@ -44,3 +44,17 @@ alias gp="java -jar /home/sonnyyu/GlobalPlatformPro/tool/target/gp.jar"
 
 gp -h
 
+opensc-tool -l
+
+No smart card readers found.
+
+sudo service pcscd restart
+
+opensc-tool -l
+
+# Detected readers (pcsc)
+
+Nr. Card Features Name
+
+0 Yes Gemalto PC Twin Reader 00 00
+
