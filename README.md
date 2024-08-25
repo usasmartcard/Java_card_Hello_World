@@ -3,10 +3,15 @@
 # Install software:
 # Ubuntu 18.04
 lsb_release -a
+
 No LSB modules are available.
+
 Distributor ID: Ubuntu
+
 Description:    Ubuntu 18.04.6 LTS
+
 Release:        18.04
+
 Codename:       bionic
 #  Update OS
 sudo apt update -y
